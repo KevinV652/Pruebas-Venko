@@ -1,0 +1,244 @@
+{
+	"info": {
+		"_postman_id": "935e460b-b2c0-45ab-b3ee-aabfc0568935",
+		"name": "Venko_Pruebas",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "39640788"
+	},
+	"item": [
+		{
+			"name": "Busqueda General Pacientes",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/pacientes",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"pacientes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Busqueda por Documento Pacientes",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/pacientes/1965324",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"pacientes",
+						"1965324"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Actualizacion de Datos Pacientes",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/pacientes/1965324",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"pacientes",
+						"1965324"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Agregar Pacientes",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"primerNombre\": \"Andres\",\r\n    \"segundoNombre\": \"Pepino\",\r\n    \"primerApellido\": \"Salazar\",\r\n    \"segundoApellido\": \"Mojica\",\r\n    \"tipoDocumento\": \"Cedula\",\r\n    \"numeroDocumento\": \"1005290003\",\r\n    \"fechaExpedicionDoc\": \"2024-12-02T00:00:00\",\r\n    \"enfermedad\": \"gangrena\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/pacientes",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"pacientes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Borrar Pacientes",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/pacientes/",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"pacientes",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Busqueda General Medicos",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/medicos",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"medicos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Busqueda por Documento Medicos",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/medicos/1965324",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"medicos",
+						"1965324"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Actualizacion de Datos medicos",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/medicos/1965324",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"medicos",
+						"1965324"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Agregar Medicos",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"primerNombre\": \"Kevincillo\",\r\n    \"segundoNombre\": \"Doctor\",\r\n    \"primerApellido\": \"Salazar\",\r\n    \"segundoApellido\": \"Mojica\",\r\n    \"tipoDocumento\": \"Cedula\",\r\n    \"numeroDocumento\": \"1005290003\",\r\n    \"fechaExpedicionDoc\": \"2024-12-02T00:00:00\",\r\n    \"enfermedad\": \"gangrena\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/medicos",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"medicos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Borrar Medicos",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/pacientes/1965324",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"pacientes",
+						"1965324"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
